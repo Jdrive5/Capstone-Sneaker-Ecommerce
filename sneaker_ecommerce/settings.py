@@ -66,6 +66,9 @@ TEMPLATES = [
         },
     },
 ]
+REST_FRAMEWORK = {
+    'COERCE_DECIMAL_TO_STRING': False
+}
 
 WSGI_APPLICATION = 'sneaker_ecommerce.wsgi.application'
 
@@ -101,7 +104,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
